@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button compassButton;
     private Button accButton;
+    private Button gyroButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 accelerometer(v);
             }
         });
+        gyroButton =(Button) findViewById(R.id.gyro_button);
+        gyroButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gyroscope(v);
+            }
+        });
+
     }
 
     /** Called when the user taps the Compass button */
@@ -42,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
     /** Called when the user taps the Direction button */
     public void accelerometer(View view){
         Intent intent = new Intent(this, AccelerometerActivity.class);
+        startActivity(intent);
+    }
+    public void gyroscope(View view){
+        Intent intent = new Intent(this, GyroActivity.class);
         startActivity(intent);
     }
 

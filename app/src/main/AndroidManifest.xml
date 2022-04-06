@@ -14,6 +14,7 @@
         android:theme="@style/Theme.HelloSensor">
         <activity android:name=".AccelerometerActivity"></activity>
         <activity android:name=".CompassActivity" />
+        <activity android:name=".GyroActivity" />
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

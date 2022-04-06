@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="80dp"
 
         android:text="Compass_button"
         />
@@ -21,6 +21,15 @@
         android:layout_marginTop="140dp"
 
         android:text="Accelerometer_button" />
+
+    <Button
+        android:id="@+id/gyro_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+
+        android:text="Gyroscope_button" />
 
 
 </RelativeLayout>
